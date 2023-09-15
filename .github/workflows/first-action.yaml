@@ -39,8 +39,6 @@ jobs:
           sleep 120
           kubectl apply -f k8s-deployment/k8s-ldap.yaml
           kubectl apply -f k8s-deployment/k8s.yaml
-          sudo chmod +x log4j.sh
-          ./log4j.sh 
           sleep 120
 
       - name: Generate Report
